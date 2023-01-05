@@ -48,7 +48,7 @@ export default function ActionAreaCard() {
           alt="ARZU Жибек Жолу"
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div" sx={{ color: "#fdd835", marginLeft: "80px", marginTop: "20px"}}>
+          <Typography gutterBottom variant="h5" component="div" sx={{ color: "#fdd835", marginLeft: "50px", marginTop: "20px"}}>
           ARZU STYLE
           </Typography>
           <Typography variant="body2" color="text.secondary" sx={{fontWeight:600, marginTop: "50px", marginLeft: "18px", fontSize: "18px"}}>
@@ -66,7 +66,7 @@ export default function ActionAreaCard() {
           alt="ARZU Жибек Жолу"
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div" sx={{ color: "#fdd835", marginLeft: "80px", marginTop: "20px"}} >
+          <Typography gutterBottom variant="h5" component="div" sx={{ color: "#fdd835", marginLeft: "20px", marginTop: "20px"}} >
           ARZU GRAND
           </Typography>
           <Typography variant="body2" color="text.secondary" sx={{fontWeight:600, marginTop: "50px", marginLeft: "18px", fontSize: "18px"}}>
