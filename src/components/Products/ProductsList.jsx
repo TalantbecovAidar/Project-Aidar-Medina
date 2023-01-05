@@ -10,7 +10,7 @@ const ProductsList = () => {
 
   const [page, setPage] = useState(1)
 
-  const itemsPerPage = 5;
+  const itemsPerPage = 16;
 
   const count = Math.ceil(products.length/itemsPerPage)
 
@@ -25,30 +25,15 @@ const ProductsList = () => {
     return products.slice(begin, end);
   }
 
-  // const [page, setPage] = useState(searchParams.get("_page") ? searchParams.get("_page") : 1)
-  
-  // const [limit, setLimit] = useState(searchParams.get("_limit") ? searchParams.get("_limit") : 5)
 
 
 
-  // useEffect(() => {
-  //   setSearchParams({
-  //     _page: page,
-  //     _limit: limit,
-  //   });
-  // }, []);
 
   useEffect(()=>{
     getProducts()
   }, [searchParams])
 
-  // useEffect(() => {
-  //   setSearchParams({
-  //     _page: page,
-  //     _limit: limit,
-  //   });
-  // }, [page, limit]);
-
+ 
   return (
     <Grid
       item

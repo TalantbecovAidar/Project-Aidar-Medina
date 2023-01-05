@@ -9,8 +9,6 @@ import InputBase from "@mui/material/InputBase";
 import Badge from "@mui/material/Badge";
 import MenuItem from "@mui/material/MenuItem";
 import Menu from "@mui/material/Menu";
-import MenuIcon from "@mui/icons-material/Menu";
-import SearchIcon from "@mui/icons-material/Search";
 import AccountCircle from "@mui/icons-material/AccountCircle";
 import MailIcon from "@mui/icons-material/Mail";
 import NotificationsIcon from "@mui/icons-material/Notifications";
@@ -18,8 +16,14 @@ import MoreIcon from "@mui/icons-material/MoreVert";
 import { useAuth } from "../../contexts/authContext";
 import { Link, useNavigate } from "react-router-dom";
 import { ADMIN } from "../../helpers/consts";
-import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
+import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
 import { useCart } from "../../contexts/cardContext";
+import InstagramIcon from '@mui/icons-material/Instagram';
+import { Button } from "@mui/material";
+
+
+
+
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -61,13 +65,20 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
   },
 }));
 
-const pages = [
-  { name: "ABOUT US", link: "/about", id: 1 },
-  { name: "CONTACT US", link: "/contacts", id: 2 },
-  { name: "PRODUCTS", link: "/products", id: 3 },
-  {name:  "HOME", link: "/", id:4}
+
+
+
+const pages = [ 
+  { name:  "О НАС", link: "/about", id: 1 },
+  { name: "МЕНЮ", link: "/products", id: 2 },
+  {name:  "ГЛАВНАЯ", link: "/", id:3},
+
+ 
+  
 ];
 
+<InstagramIcon/>
+ 
 export default function Navbar() {
   const navigate = useNavigate();
   const { user, handleLogout } = useAuth();
@@ -124,7 +135,7 @@ export default function Navbar() {
           navigate("/auth");
         }}
       >
-        Profile
+        Профиль
       </MenuItem>
       <MenuItem
         onClick={() => {
@@ -132,7 +143,7 @@ export default function Navbar() {
           handleMenuClose();
         }}
       >
-        Logout
+        Выйти
       </MenuItem>
     </Menu>
   );
@@ -182,42 +193,22 @@ export default function Navbar() {
           aria-haspopup="true"
           color="inherit"
         >
-          <AccountCircle />
+          <AccountCircle sx={{color:"#ffe082"}} />
         </IconButton>
-        <p>Profile</p>
+        <p></p>
       </MenuItem>
     </Menu>
   );
 
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Box sx={{ flexGrow: 1, }}>
       <AppBar position="static">
         <Toolbar>
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="open drawer"
-            sx={{ mr: 2 }}
-          >
-            <MenuIcon />
-          </IconButton>
-          <Typography
-            variant="h6"
-            noWrap
-            component="div"
-            sx={{ display: { xs: "none", sm: "block" } }}
-          >
-            70-80
-          </Typography>
+      
+      
           <Search>
-            <SearchIconWrapper>
-              <SearchIcon />
-            </SearchIconWrapper>
-            <StyledInputBase
-              placeholder="Search…"
-              inputProps={{ "aria-label": "search" }}
-            />
+          
+       
           </Search>
           {user.email == ADMIN ? (
             <Link
@@ -231,19 +222,33 @@ export default function Navbar() {
               Admin
             </Link>
           ) : null}
-          <Box sx={{ display: "flex", gap: "6px" }}>
+          <Box sx={{ display: "flex", gap: "6px",    }}>
             {pages.map((item) => (
               <Link to={item.link}>
-                <Typography sx={{ color: "white" }}>{item.name}</Typography>
+                <Typography sx={{ color: "#fdd835" ,  }}>{item.name}</Typography>
               </Link>
             ))}
+             
+              <Button sx={{backgroundColor:"#ffe082", color:"#f57f17", height:"20px", marginTop:"2px"} }variant="contained" size="small">
+          Заказать 
+        </Button>
+
+        <InstagramIcon sx={{color:"#ffe082"}}/>
+
           </Box>
+      <Box  className="navbar">
+         <img   width="100px"  className="navbar" src="https://arzu.kg/static/images/general/logo.svg" alt="" />
+         </Box>
+     
+           
+        
 
-          <Box sx={{ flexGrow: 1 }} />
+
+          <Box sx={{ flexGrow: 1 ,   }} />
          
-          {user ? <Box>{user.email}</Box> : <Box>Не авторизован</Box>}
+          {user ? <Box>{user.email}</Box> : <Box sx={{color:"#ffe082"}}>Регистрация</Box>}
 
-          <Box sx={{ display: { xs: "none", md: "flex" } }}>
+          <Box sx={{ display: { xs: "none", md: "flex" } , }}>
            
             <IconButton
               size="large"
@@ -252,7 +257,7 @@ export default function Navbar() {
               onClick={()=>navigate("/cart")}
             >
               <Badge badgeContent={cart?.products.length} color="error">
-                <ShoppingBagIcon/>
+              <ShoppingBasketIcon sx={{color:"#ffe082"}}/>
               </Badge>
             </IconButton>
 
@@ -265,10 +270,10 @@ export default function Navbar() {
               onClick={handleProfileMenuOpen}
               color="inherit"
             >
-              <AccountCircle />
+              <AccountCircle sx={{color:"#ffe082"}} />
             </IconButton>
           </Box>
-          <Box sx={{ display: { xs: "flex", md: "none" } }}>
+          <Box sx={{ display: { xs: "flex", md: "none" } , }}>
             <IconButton
               size="large"
               aria-label="show more"

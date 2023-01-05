@@ -3,7 +3,7 @@ import EditProduct from './EditProduct';
 
 
 const EditProductPage = () => {
-    return <div>EditProduct
+    return <div>
         <EditProduct/>
     </div>
     

@@ -10,4 +10,4 @@ export const CART = {
 
 export const JSON_API_PRODUCTS = "http://localhost:8000/products";
 
-export const ADMIN = "talantbecov@mail.com";
+export const ADMIN = "medialieva3@gmail.com";
