@@ -1,0 +1,30 @@
+body{
+    background: #000;
+    background-image: url(https://arzu.kg/cafe-inside/static/images/content/KOR-27.jpg);
+    max-width: 1903px;
+    max-height: 1000px;
+}
+
+
+.container{
+  background: #000;
+}
+
+
+
+
+.card{
+    margin-top: 10px;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    margin-top: 300px;
+}
+.box {
+    transition: 1s; /* Время эффекта */
+   }
+   .box:hover {
+    transform: scale(0.9); /* Увеличиваем масштаб */
+   }
