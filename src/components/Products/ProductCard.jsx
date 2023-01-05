@@ -24,7 +24,7 @@ export default function ProductCard({ item }) {
   // console.log(email);
 
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 200 }}>
       <CardMedia
         sx={{ height: 140, cursor:"pointer" }}
         image={item.picture}
