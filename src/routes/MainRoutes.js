@@ -35,11 +35,11 @@ const MainRoutes = () => {
       element: <ProductsPage />,
       id: 4,
     },
-    // {
-    //   link: "/About",
-    //   element: <AboutUs />,
-    //   id: 5,
-    // },
+    {
+      link: "/About",
+      element: <AboutUs />,
+      id: 5,
+    },
     {
       link: "/products/:id",
       element: <ProductDetailsPage/>,

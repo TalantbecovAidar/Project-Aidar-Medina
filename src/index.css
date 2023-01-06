@@ -12,9 +12,9 @@ a {
   display: flex;
   justify-content: center;
  align-items: center;
- margin-left: 70px;
- margin-top: 30px;
- width: 30%;
+ margin-left: 280px;
+ margin-top: 10px;
+ width: 20%;
 }
 .link{
   color: #ffee58;
