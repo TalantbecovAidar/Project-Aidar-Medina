@@ -23,15 +23,11 @@ body{
     margin-top: 150px;
 
 }
-.box {
+.box{
     transition: 1s; /* Время эффекта */
    }
    .box:hover {
     transform: scale(0.9); /* Увеличиваем масштаб */
    }
 
-   @media all and (max-width: 950px){
-   .cards{
-       width: 10%;
-   }
-}
+ 

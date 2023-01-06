@@ -5,7 +5,7 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 200vh;
+   
     margin: auto;
     padding: 100px;
     background-color: rgb(0, 0, 0, 0.5);
@@ -16,8 +16,10 @@
     font-family: 'Open Sans', sans-serif;
     font-family: 'Roboto Condensed', sans-serif;
     font-family: 'Roboto Mono', monospace;
+  
     
 }
+
 
 body {
     width: 100%;
@@ -47,11 +49,13 @@ p {
     width: 40%;
 }
 
-img {
-    width: 30%;
-    margin: auto;
-}
 
+
+.MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-o69gx8-MuiCardMedia-root{
+    height: 10px;
+
+
+}
 #background-video {
     object-fit: cover;
     width: 100vw;
@@ -71,7 +75,7 @@ img {
     height: 90%;    
 } */
 
-img {
-    width: 500px;
+.imges{
+    width: 500px; 
     height: 400px;
-}
+ } 

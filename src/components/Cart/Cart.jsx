@@ -74,7 +74,7 @@ export default function Cart() {
           {cart?.products.map((row) => (
             <StyledTableRow key={row.item.id}>
               <StyledTableCell component="th" scope="row">
-                <img src={row.item.picture} width="70px" height="70px" alt="" />
+                <img className='imgg'  src={row.item.picture} width="70px" height="70px" alt="" />
               </StyledTableCell>
               <StyledTableCell align="right">{row.item.name}</StyledTableCell>
               <StyledTableCell align="right">{row.item.type}</StyledTableCell>
