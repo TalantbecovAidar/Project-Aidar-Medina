@@ -234,10 +234,12 @@ export default function Navbar() {
         </Button>
 
         <InstagramIcon sx={{color:"#ffe082"}}/>
+              
 
-          </Box>
+              
+          </Box >
       <Box  className="navbar">
-         <img   width="100px"  className="navbar" src="https://arzu.kg/static/images/general/logo.svg" alt="" />
+         <img  className="navbar" src="https://arzu.kg/static/images/general/logo.svg" alt="" />
          </Box>
      
            

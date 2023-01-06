@@ -41,18 +41,18 @@
       "id": 5
     },
     {
-      "name": "Манная каша",
+      "name": "пшенная каша в тыкве на молоке",
       "description": "250гр",
       "price": "70 ",
-      "picture": "https://static.1000.menu/img/content-v2/e6/13/34778/jidkaya-mannaya-kasha-na-moloke_1617533964_5_max.jpg",
+      "picture": "https://static.1000.menu/res/640/img/content-v2/60/c8/39387/pshennaya-kasha-v-tykve-na-moloke_1614176793_12_max.jpg",
       "type": "завтраки",
       "id": 6
     },
     {
-      "name": "Рисовая каша",
+      "name": "Рисовая каша с тыквой на молоке",
       "description": "250гр",
       "price": "80",
-      "picture": "https://static.1000.menu/img/content-v2/bd/8a/26658/klassicheskaya-risovaya-kasha-na-moloke_1605175216_7_max.jpg",
+      "picture": "https://static.1000.menu/img/content-v2/b5/37/23910/risovaya-kasha-s-tykvoi-na-moloke_1616394991_prev_hor.jpg",
       "type": "завтраки",
       "id": 7
     },
@@ -127,6 +127,22 @@
       "picture": "https://barashek.kg/wp-content/uploads/2022/10/DSC01238-600x600.jpg",
       "type": "салаты",
       "id": 17
+    },
+    {
+      "name": "fwrg",
+      "description": "egreg",
+      "price": "0egbesb",
+      "picture": "ebesb",
+      "type": "ebeb",
+      "id": 18
+    },
+    {
+      "name": "",
+      "description": "",
+      "price": 0,
+      "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC4VtHeFpwTl4T5a91WOZuRuhMyRYr70VAwg&usqp=CAU",
+      "type": "",
+      "id": 19
     }
   ]
 }

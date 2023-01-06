@@ -12,9 +12,8 @@ a {
   display: flex;
   justify-content: center;
  align-items: center;
- margin-left: 70px;
- margin-top: 30px;
- width: 30%;
+ margin-left: 10%;
+ width: 23%;
 }
 .link{
   color: #ffee58;
@@ -23,4 +22,19 @@ a {
   background-color: black;
 
   border-radius: none;
+}
+
+
+ /* adaptive start */
+@media all and (max-width: 1080px) {
+  .navbar{
+     width: 25%;
+     margin-left: 10px;
+  }
+
+}
+  /*  adaptive end */
+.search{
+  background: rgb(74,74,75);
+  background: linear-gradient(90deg, rgba(74,74,75,0.44861694677871145) 0%, rgba(54,54,55,1) 0%, rgba(39,40,41,0.6334908963585435) 100%, rgba(0,212,255,1) 100%);
 }

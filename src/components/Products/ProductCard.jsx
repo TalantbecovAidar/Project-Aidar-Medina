@@ -24,9 +24,9 @@ export default function ProductCard({ item }) {
   // console.log(email);
 
   return (
-    <Card sx={{ maxWidth: 200 }}>
+    <Card  sx={{ width:"40%", borderRadius:"10%" , margin:"2% 3%"}}>
       <CardMedia
-        sx={{ height: 140, cursor:"pointer" }}
+        sx={{ height: 200, cursor:"pointer" }}
         image={item.picture}
         title="green iguana"
         onClick={()=>navigate(`/products/${item.id}`)}
