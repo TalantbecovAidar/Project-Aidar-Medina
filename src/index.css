@@ -7,3 +7,20 @@
 a {
   text-decoration: none;
 }
+
+.navbar{
+  display: flex;
+  justify-content: center;
+ align-items: center;
+ margin-left: 280px;
+ margin-top: 10px;
+ width: 20%;
+}
+.link{
+  color: #ffee58;
+}
+.css-hyum1k-MuiToolbar-root{
+  background-color: black;
+
+  border-radius: none;
+}

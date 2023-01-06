@@ -38,20 +38,21 @@ const SideBar = () => {
           <FormControl>
             <FormLabel>Type</FormLabel>
             <RadioGroup onChange={(e) => fetchByParams("type", e.target.value)} >
-              <FormControlLabel value="all" control={<Radio/>} label="all" ></FormControlLabel>
-              <FormControlLabel value="telephone" control={<Radio/>}  label="telephone" ></FormControlLabel>
-              <FormControlLabel value="laptop" control={<Radio/>}  label="laptop" ></FormControlLabel>
-              <FormControlLabel value="watch" control={<Radio/>}  label="watch" ></FormControlLabel>
+              <FormControlLabel value="все" control={<Radio/>} label="все " ></FormControlLabel>
+              <FormControlLabel value="завтраки" control={<Radio/>}  label="завтраки" ></FormControlLabel>
+              <FormControlLabel value="вторые блюда" control={<Radio/>}  label="вторые блюда" ></FormControlLabel>
+              <FormControlLabel value="десерты" control={<Radio/>}  label="десерты" ></FormControlLabel>
+              <FormControlLabel value="салаты" control={<Radio/>}  label="салаты" ></FormControlLabel>
             </RadioGroup>
           </FormControl>
 
           <FormControl>
             <FormLabel>Price</FormLabel>
             <RadioGroup onChange={(e) => fetchByParams("price_lte", e.target.value)} >
-              <FormControlLabel value="all" control={<Radio/>} label="all" ></FormControlLabel>
-              <FormControlLabel value="100" control={<Radio/>}  label="less than 100$" ></FormControlLabel>
-              <FormControlLabel value="600" control={<Radio/>}  label="less than 600" ></FormControlLabel>
-              <FormControlLabel value="1300" control={<Radio/>}  label="less than 1300" ></FormControlLabel>
+              <FormControlLabel value="все" control={<Radio/>} label="все" ></FormControlLabel>
+              <FormControlLabel value="100" control={<Radio/>}  label="меньше чем 100" ></FormControlLabel>
+              <FormControlLabel value="600" control={<Radio/>}  label="меньше чем 600" ></FormControlLabel>
+              <FormControlLabel value="1300" control={<Radio/>}  label="меньше чем 1300" ></FormControlLabel>
             </RadioGroup>
           </FormControl>
         </Grid>

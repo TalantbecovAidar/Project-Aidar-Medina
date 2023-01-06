@@ -6,7 +6,7 @@ import SideBar from "../components/Products/SideBar";
 const ProductsPage = () => {
   return (
     <Box p={5}>
-      ProductsPage
+  
       <Grid
         // sx={{ backgroundColor: "black", height: "100vh" }}
         container
