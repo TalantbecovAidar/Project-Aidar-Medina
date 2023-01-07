@@ -10,8 +10,6 @@ import Badge from "@mui/material/Badge";
 import MenuItem from "@mui/material/MenuItem";
 import Menu from "@mui/material/Menu";
 import AccountCircle from "@mui/icons-material/AccountCircle";
-import MailIcon from "@mui/icons-material/Mail";
-import NotificationsIcon from "@mui/icons-material/Notifications";
 import MoreIcon from "@mui/icons-material/MoreVert";
 import { useAuth } from "../../contexts/authContext";
 import { Link, useNavigate } from "react-router-dom";
@@ -19,7 +17,7 @@ import { ADMIN } from "../../helpers/consts";
 import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
 import { useCart } from "../../contexts/cardContext";
 import InstagramIcon from '@mui/icons-material/Instagram';
-import { Button } from "@mui/material";
+
 
 
 
@@ -44,7 +42,7 @@ const Search = styled("div")(({ theme }) => ({
 const SearchIconWrapper = styled("div")(({ theme }) => ({
   padding: theme.spacing(0, 2),
   height: "100%",
-  position: "absolute",
+  // position: "absolute",  
   pointerEvents: "none",
   display: "flex",
   alignItems: "center",
@@ -77,7 +75,7 @@ const pages = [
   
 ];
 
-<InstagramIcon/>
+
  
 export default function Navbar() {
   const navigate = useNavigate();
@@ -165,25 +163,21 @@ export default function Navbar() {
       open={isMobileMenuOpen}
       onClose={handleMobileMenuClose}
     >
-      <MenuItem>
-        <IconButton size="large" aria-label="show 4 new mails" color="inherit">
-          <Badge badgeContent={4} color="error">
-            <MailIcon />
-          </Badge>
-        </IconButton>
-        <p>Messages</p>
-      </MenuItem>
+     
+    
+      
       <MenuItem>
         <IconButton
           size="large"
           aria-label="show 17 new notifications"
           color="inherit"
+          onClick={()=>navigate("/cart")}
         >
           <Badge badgeContent={17} color="error">
-            <NotificationsIcon />
+            <ShoppingBasketIcon  />
           </Badge>
         </IconButton>
-        <p>Notifications</p>
+        <p>Cart</p>
       </MenuItem>
       <MenuItem onClick={handleProfileMenuOpen}>
         <IconButton
@@ -195,7 +189,7 @@ export default function Navbar() {
         >
           <AccountCircle sx={{color:"#ffe082"}} />
         </IconButton>
-        <p></p>
+        <p>Admin</p>
       </MenuItem>
     </Menu>
   );
@@ -229,11 +223,9 @@ export default function Navbar() {
               </Link>
             ))}
              
-              <Button sx={{backgroundColor:"#ffe082", color:"#f57f17", height:"20px", marginTop:"2px"} }variant="contained" size="small">
-          Заказать 
-        </Button>
+              
 
-        <InstagramIcon sx={{color:"#ffe082"}}/>
+         <a href="https://www.instagram.com/arzu_restaurants/?hl=ru"><InstagramIcon  sx={{color:"#ffe082"}}/></a>
               
 
               
@@ -259,7 +251,7 @@ export default function Navbar() {
               onClick={()=>navigate("/cart")}
             >
               <Badge badgeContent={cart?.products.length} color="error">
-              <ShoppingBasketIcon sx={{color:"#ffe082"}}/>
+              <ShoppingBasketIcon  sx={{color:"#ffe082"}}/>
               </Badge>
             </IconButton>
 

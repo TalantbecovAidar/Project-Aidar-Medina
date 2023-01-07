@@ -13,7 +13,7 @@ a {
   justify-content: center;
  align-items: center;
 
- margin-left: 10%;
+ margin-left: 18%;
  width: 23%;
 
 }
@@ -55,4 +55,47 @@ a {
     width: 10%;
   }
 }
+@media all and (max-width: 890px){
+  .box{
+    min-width: 100px;
+  }
+  .all{
+    display: flex;
+   flex-wrap: wrap;
+   height: 10px;
+   
+  }
+  .picture{
+    width: 100px;
+    
+  }
+  .next{
+    display: none;
+  }
+  
+  .navbar{
+    width: 30%;
+    margin-left: 1px;
+  }
+  
+    
+    
+}
+
+@media all and (max-width: 890px){
+  .picture{
+    width: 90%;
+  }
+}
+
+@media all and (max-width: 620px){
+  .all{
+    width: 150%;
+  }
+  .image{
+    width: 100%;
+  }
+}
+
+
   /*  adaptive end */

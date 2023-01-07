@@ -19,9 +19,9 @@ export default function ActionAreaCard() {
         </Box>
       );
   return (
-    <Box> 
+    <Box className="all"> 
         <div className="box">
-            <Card className="card" sx={{ maxWidth: 345, borderRadius: "20px", marginLeft: "20px  "}}>
+            <Card className="card" sx={{ maxWidth: 320, borderRadius: "20px", marginLeft: "20px  "}}>
       <CardActionArea>
         <CardMedia 
           component="img"
@@ -30,20 +30,20 @@ export default function ActionAreaCard() {
           alt="ARZU Жибек Жолу"
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div" sx={{ color: "#fdd835", marginLeft: "50px", marginTop: "20px"}}>
+          <Typography  gutterBottom variant="h5" component="div" sx={{  color: "#fdd835", marginLeft: "50px", marginTop: "20px"}}>
           ARZU Жибек Жолу
           </Typography>
-          <Typography variant="body2" color="text.secondary" sx={{fontWeight:600, marginTop: "50px", marginLeft: "18px", fontSize: "18px"}}>
+          <Typography className="next" variant="body2" color="text.secondary" sx={{fontWeight:600, marginTop: "50px", marginLeft: "18px", fontSize: "18px"}}>
           Ресторан с 9 роскошными VIP-залами, залом А-ля карт на 200 мест, чудесной летней площадкой и детской зоной
           </Typography>
         </CardContent>
       </CardActionArea>
     </Card>
-    <Card className="card" sx={{ maxWidth: 345, borderRadius: "20px", marginLeft: "50px", height:450 }}>
+    <Card className="card" sx={{ maxWidth: 320, borderRadius: "20px", marginLeft: "50px", height:450 }}>
       <CardActionArea>
         <CardMedia
+        className="image"
           component="img"
-       
           image="https://arzu.kg/static/images/content/restaurant-1.jpg"
           alt="ARZU Жибек Жолу"
         />
@@ -51,25 +51,25 @@ export default function ActionAreaCard() {
           <Typography gutterBottom variant="h5" component="div" sx={{ color: "#fdd835", marginLeft: "50px", marginTop: "20px"}}>
           ARZU STYLE
           </Typography>
-          <Typography variant="body2" color="text.secondary" sx={{fontWeight:600, marginTop: "30px", marginLeft: "18px", fontSize: "18px"}}>
+          <Typography className="next" variant="body2" color="text.secondary" sx={{fontWeight:600, marginTop: "30px", marginLeft: "18px", fontSize: "18px"}}>
           Кафе с двумя залами, тремя VIP-кабинками, двухуровневой летней площадкой и детской комнатой с няней
           </Typography>
         </CardContent>
       </CardActionArea>
     </Card>
-    <Card className="card" sx={{ maxWidth: 345, borderRadius: "20px", marginLeft: "50px" }}>
+    <Card className="card" sx={{ maxWidth: 320, borderRadius: "20px", marginLeft: "50px" }}>
       <CardActionArea>
         <CardMedia
           component="img"
           height="200"
-          image="https://arzu.kg/static/images/content/restaurant-3.jpg"
+          image="https://arzu.kg/static/images/content/restaurant-3.jpg "
           alt="ARZU Жибек Жолу"
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div" sx={{ color: "#fdd835", marginLeft: "50px", marginTop: "20px"}} >
+          <Typography  gutterBottom variant="h5" component="div" sx={{ color: "#fdd835", marginLeft: "50px", marginTop: "20px"}} >
           ARZU GRAND
           </Typography>
-          <Typography variant="body2" color="text.secondary" sx={{fontWeight:600, marginTop: "50px", marginLeft: "18px", fontSize: "18px"}}>
+          <Typography className="next" variant="body2" color="text.secondary" sx={{fontWeight:600, marginTop: "50px", marginLeft: "18px", fontSize: "18px"}}>
           Банкетный зал для торжеств класса «люкс» вместимостью до 500 человек
           </Typography>
         </CardContent>

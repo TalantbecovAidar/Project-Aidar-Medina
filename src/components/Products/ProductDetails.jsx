@@ -15,12 +15,12 @@ const ProductDetails = () => {
             <Paper SX={{m:3}} elevation={24}>
                 <Grid container >
                     <Grid item xs={6} >
-                        <img src={oneProduct.picture} alt="" />
+                        <img className='picture' src={oneProduct.picture} alt="" />
                     </Grid>
                 <Grid item xs={6} >
                     <Typography variant="h3">{oneProduct.name}</Typography>
                     <Typography variant="subtitle1">{oneProduct.type}</Typography>
-                    <Typography variant="caption">{oneProduct.price}$ </Typography>
+                    <Typography variant="caption">{oneProduct.price}cом </Typography>
                     <Typography variant="caption">{oneProduct.description}</Typography>
                     <Box>
                        <Button variant="outlined" >Добавить в корзину</Button>

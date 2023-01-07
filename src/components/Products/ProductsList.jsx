@@ -10,7 +10,7 @@ const ProductsList = () => {
 
   const [page, setPage] = useState(1)
 
-  const itemsPerPage = 16;
+  const itemsPerPage = 10;
 
   const count = Math.ceil(products.length/itemsPerPage)
 
