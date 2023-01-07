@@ -70,9 +70,6 @@ const pages = [
   { name:  "О НАС", link: "/about", id: 1 },
   { name: "МЕНЮ", link: "/products", id: 2 },
   {name:  "ГЛАВНАЯ", link: "/", id:3},
-
- 
-  
 ];
 
 
@@ -225,7 +222,7 @@ export default function Navbar() {
              
               
 
-         <a href="https://www.instagram.com/arzu_restaurants/?hl=ru"><InstagramIcon  sx={{color:"#ffe082"}}/></a>
+        <a href="https://www.instagram.com/arzu_restaurants/" > <InstagramIcon sx={{color:"#ffe082"}}/></a>
               
 
               
