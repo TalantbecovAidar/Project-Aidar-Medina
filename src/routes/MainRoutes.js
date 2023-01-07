@@ -1,6 +1,7 @@
 import React from "react";
 import { Navigate, Route, Routes } from "react-router-dom";
 import AboutUs from "../components/AboutUs/AboutUs";
+import PaymentForm from "../components/CreditCard/CreditCard";
 import { useAuth } from "../contexts/authContext";
 import { ADMIN } from "../helpers/consts";
 import AdminPage from "../pages/AdminPage";
@@ -49,6 +50,11 @@ const MainRoutes = () => {
       link: "/cart",
       element: <CartPage/>,
       id: 7,
+    },
+    {
+      link: "/creditcart",
+      element: <PaymentForm/>,
+      id: 8,
     }
   ];
 

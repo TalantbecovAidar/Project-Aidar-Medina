@@ -13,6 +13,8 @@ import { useProducts } from "../../contexts/productsContext";
 import { useNavigate } from "react-router-dom";
 import { useCart } from "../../contexts/cardContext";
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+import FavoriteIcon from '@mui/icons-material/Favorite';
 
 export default function ProductCard({ item }) {
   const {addProductToCart, checkProductInCart} = useCart()
@@ -41,7 +43,7 @@ export default function ProductCard({ item }) {
           variant="h5"
           component="div"
         >
-          {item.price}$
+          {item.price}cом
         </Typography>
         <Typography
           sx={{
@@ -67,9 +69,12 @@ export default function ProductCard({ item }) {
           <IconButton onClick={()=>addProductToCart(item)} >
             {checkProductInCart(item.id) ? (<><ShoppingCartIcon sx={{color: "brown",}} /></>) : (<><AddShoppingCartIcon /></>)}
           </IconButton>
+          
         )}
       </CardActions>
+      
     </Card>
+    
   );
 }
 

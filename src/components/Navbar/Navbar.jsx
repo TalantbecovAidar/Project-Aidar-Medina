@@ -72,12 +72,9 @@ const pages = [
   { name:  "О НАС", link: "/about", id: 1 },
   { name: "МЕНЮ", link: "/products", id: 2 },
   {name:  "ГЛАВНАЯ", link: "/", id:3},
-
- 
-  
 ];
 
-<InstagramIcon/>
+
  
 export default function Navbar() {
   const navigate = useNavigate();
@@ -233,7 +230,7 @@ export default function Navbar() {
           Заказать 
         </Button>
 
-        <InstagramIcon sx={{color:"#ffe082"}}/>
+        <a href="https://www.instagram.com/arzu_restaurants/" > <InstagramIcon sx={{color:"#ffe082"}}/></a>
               
 
               
