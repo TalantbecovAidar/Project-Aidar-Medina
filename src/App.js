@@ -5,6 +5,7 @@ import ProductsContextProvider from "./contexts/productsContext";
 import HomePage from "./pages/HomePage";
 import MainRoutes from "./routes/MainRoutes";
 import CartContextProvider from "./contexts/cardContext";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   return (
@@ -12,7 +13,9 @@ const App = () => {
       <ProductsContextProvider>
         <CartContextProvider>
         <Navbar  />
+       
         <MainRoutes />
+        <Footer/>
         </CartContextProvider>
       </ProductsContextProvider>
     </AuthContextProvider>
