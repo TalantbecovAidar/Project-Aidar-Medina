@@ -9,6 +9,9 @@ import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import { useCart } from '../../contexts/cardContext';
 import { Button } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
+
+
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
@@ -19,6 +22,7 @@ const StyledTableCell = styled(TableCell)(({ theme }) => ({
     fontSize: 14,
   },
 }));
+
 
 const StyledTableRow = styled(TableRow)(({ theme }) => ({
   '&:nth-of-type(odd)': {
@@ -43,7 +47,7 @@ const rows = [
 ];
 
 export default function Cart() {
-
+  const navigate = useNavigate()
     const {getCart, cart, changeProductCount, deleteCartProduct} = useCart()
 
     React.useEffect(()=>{
@@ -74,7 +78,7 @@ export default function Cart() {
           {cart?.products.map((row) => (
             <StyledTableRow key={row.item.id}>
               <StyledTableCell component="th" scope="row">
-                <img src={row.item.picture} width="70px" height="70px" alt="" />
+                <img className='imgg'  src={row.item.picture} width="70px" height="70px" alt="" />
               </StyledTableCell>
               <StyledTableCell align="right">{row.item.name}</StyledTableCell>
               <StyledTableCell align="right">{row.item.type}</StyledTableCell>
@@ -87,7 +91,8 @@ export default function Cart() {
           ))}
         </TableBody>
       </Table>
-      <Button onClick={cartCleaner} >BUY NOW FOR {cart?.totalPrice}</Button>
+      <Button onClick={()=> navigate(`/creditcart`)} >BUY NOW FOR {cart?.totalPrice}</Button>
+
     </TableContainer>
   );
 }

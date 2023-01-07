@@ -20,11 +20,14 @@ body{
 .box{
     display: flex;
     justify-content: center;
-    margin-top: 300px;
+    margin-top: 150px;
+
 }
-.box {
+.box{
     transition: 1s; /* Время эффекта */
    }
    .box:hover {
     transform: scale(0.9); /* Увеличиваем масштаб */
    }
+
+ 

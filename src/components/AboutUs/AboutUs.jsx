@@ -49,21 +49,6 @@ Arzu - это уникальный комплекс, состоящий из 9 V
         </p>
        <img src="https://realkz.com/images_resize/gallery/61734.jpg" alt="" />
         <br />
-        {/* <h2>Наш Топ-новинок</h2> */}
-        {/* <div className="img-div">
-          <img
-            src={require("./62822bec1e673.png")}
-            alt=""
-          />
-          <img
-            src={require("./107028.png")}
-            alt=""
-          />
-          <img
-            src={require("./caption.jpg")}
-            alt=""
-          />
-        </div> */}
       </div>
     </div>
   );

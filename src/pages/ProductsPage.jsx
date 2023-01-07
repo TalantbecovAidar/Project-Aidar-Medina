@@ -12,8 +12,8 @@ const ProductsPage = () => {
         container
         spacing={3}
       >
-        <ProductsList />
         <SideBar />
+        <ProductsList />
       </Grid>
     </Box>
   );
