@@ -10,17 +10,21 @@ a {
 
 .navbar{
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
  align-items: center;
 
- margin-left: 18%;
- width: 23%;
+   margin-left: 25%;
+ width: 20%;
 
+}
+.shopping{
+  color: #ffe082 ;
+  width: 10px;
 }
 .link{
   color: #ffee58;
 }
-.css-hyum1k-MuiToolbar-root{
+.css-19r6kue-MuiContainer-root{
   background-color: black;
 
   border-radius: none;
@@ -41,30 +45,55 @@ a {
 @media all and (max-width: 1080px) {
   .navbar{
      width: 25%;
-     margin-left: 10px;
+     margin-left:80px;
   }
-  
-
+  .footer{
+    margin-left: -100px;
+  }
+  img{
+    width: 60%;
+  }
+  .p p-1{
+    width: 10% ;
+  }
+}
+@media all and (max-width: 1080px) {
+  .navbar{
+    margin-left: 25%;
+  }
 }
 
 @media all and (max-width: 900px){
   .navbar{
     margin-left: 10%;
   }
-  .img{
-    width: 10%;
+
+  .footer{
+    margin-left: -200px;
   }
+ 
+  .p p-1{
+    width: 10% ;
+  }
+  img{
+    width: 90%;
+  }
+  .next{
+    display: none;
+  }
+ 
+   .card{
+    margin-left: 100px;
+   }
 }
 @media all and (max-width: 890px){
-  .box{
-    min-width: 100px;
+  
+  .footer{
+    margin-left: -250px;
+    font-weight: 10%;
+    height: 60%;
   }
-  .all{
-    display: flex;
-   flex-wrap: wrap;
-   height: 10px;
-   
-  }
+  
   .picture{
     width: 100px;
     
@@ -75,25 +104,170 @@ a {
   
   .navbar{
     width: 30%;
-    margin-left: 1px;
+    margin-left: 1px; 
   }
   
     
     
 }
 
-@media all and (max-width: 890px){
+@media all and (max-width: 831px){
+ .navbar{
+  width: 20%;
+  margin-left: 35%;
+ }
+}
+
+@media all and (max-width: 820px){
   .picture{
     width: 90%;
   }
 }
 
+@media all and (max-width: 768px) {
+  .navbar{
+    margin-left: 38%;
+  }
+}
 @media all and (max-width: 620px){
   .all{
     width: 150%;
   }
   .image{
     width: 100%;
+  }
+}
+
+@media all and (max-width: 425px){
+   .box{
+      display: block;
+       flex-wrap: wrap;
+       /* margin-right: 50%; */
+
+
+  }
+  .css-0{
+ width: 100%;
+  }
+  
+
+  #root{
+    width: 100%;
+  }
+  
+.texxt{
+  margin-right: 100px;
+  font-size: 10%;
+}
+.arzu{
+  margin: 10% 10%;
+}
+.arzu2{
+ margin-right: 10px;
+}
+}
+@media all and (max-width: 320px){
+.video{
+  display: none;
+}
+.navbar{
+  width: 30%;
+  margin-left: 350%;
+}
+.css-gepadz-MuiTypography-root{
+  font-size: 10px !important;
+}
+
+
+.css-byrvmt-MuiTypography-root{
+  display: flex;
+  justify-content: flex-start;
+  /* margin-bottom: -10px !important; */
+  margin-top: 10px !important;
+ 
+}
+.css-1825aem-MuiTypography-root{
+  font-size: 10px !important;
+  margin-top: 10px !important;
+  margin-bottom: -40px !important;
+}
+.css-1jb4ns0-MuiTypography-root{
+  font-size: 10px !important;
+
+}
+.css-sqx8tt-MuiTypography-root{
+  font-size: 10px !important;
+  margin-top: 10px !important;
+  margin-bottom: -20px !important;
+
+}
+.css-byrvmt-MuiTypography-root{
+  font-size: 10px !important;
+}
+.shopping{
+  width: 10px;
+}
+.css-2s90m6-MuiAvatar-root{
+margin-top: 10px;
+}
+
+.cardss{
+  display: block !important;
+ flex-direction: column !important;
+ flex-wrap: wrap !important;
+ width: 100%
+}
+.card-product {
+  width: 100% !important;
+}
+.css-vj1n65-MuiGrid-root{
+  width: 70%;
+}
+.css-1hvh3sw-MuiPaper-root-MuiCard-root{
+  width: 60% !important;
+  height: 60% !important;
+  margin-top: 10%;
+  margin-left: 20% !important;
+}
+.css-eelcs1-MuiPaper-root-MuiCard-root{
+  width: 60% !important;
+  height: 60% !important;
+  margin-top: 10%;
+  margin-left: 20% !important;  
+
+}
+.css-46bh2p-MuiCardContent-root{
+  width: 60% !important;
+  height: 60% !important;
+ 
+  margin-top: 10%;
+}
+.css-b6lsxj-MuiButtonBase-root-MuiCardActionArea-roott{
+  width: 60% !important;
+  height: 60% !important;
+  margin-left: 10%;
+  margin-top: 10%;
+}
+
+.css-13o0td9-MuiPaper-root-MuiCard-root{
+  width: 60% !important;
+  margin-left: 20% !important;
+  margin-top: 10%;
+}
+
+
+
+}
+@media all and (max-width: 425px) {
+  .navbar{
+    margin-left: 37%;
+  }
+}
+
+
+@media all and (max-width: 375px) {
+  .navbar{
+    margin-left: 35%;
   }
 }
 

@@ -26,7 +26,7 @@ export default function ProductCard({ item }) {
   // console.log(email);
 
   return (
-    <Card  sx={{ width:"40%", borderRadius:"10%" , margin:"2% 3%"}}>
+    <Card className="card-product" sx={{width:"40%", borderRadius:"10%" , margin:"2% 3%"}}>
       <CardMedia
         sx={{ height: 200, cursor:"pointer" }}
         image={item.picture}
@@ -43,7 +43,7 @@ export default function ProductCard({ item }) {
           variant="h5"
           component="div"
         >
-          {item.price}сом
+          {item.price}cом
         </Typography>
         <Typography
           sx={{

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
 
-.div {
+.divs {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -79,3 +79,9 @@ p {
     width: 500px; 
     height: 400px;
  } 
+
+ /* @media all and (max-width: 1080px){
+    img{
+
+    }
+ } */

@@ -23,7 +23,7 @@ export default function ActionAreaCard() {
     <Box className="all"> 
         <div className="box">
             <Card className="card" sx={{ maxWidth: 320, borderRadius: "20px", marginLeft: "20px  "}}>
-      <CardActionArea>
+      <CardActionArea className="arzu">
         <CardMedia 
           component="img"
           height="200"
@@ -41,7 +41,7 @@ export default function ActionAreaCard() {
       </CardActionArea>
     </Card>
     <Card className="card" sx={{ maxWidth: 320, borderRadius: "20px", marginLeft: "50px", height:450 }}>
-      <CardActionArea>
+      <CardActionArea className="arzu2">
         <CardMedia
         className="image"
           component="img"
@@ -78,9 +78,8 @@ export default function ActionAreaCard() {
     </Card>
     </div>
         
-    
-    <Card  sx={{   width:"80%", margin:"6% 10%", borderRadius: "20px" }}>
-      <CardContent>
+    <div className="card2" ><Card   sx={{   width:"80%", margin:"6% 10%", borderRadius: "20px" }}>
+      <CardContent >
       <Typography sx={{ mb: 1.5, marginTop: "40px", marginLeft: "20px" }} color="text.secondary">
         Мы принимаем заказы на проведение мероприятий для компаний от 8 до 500 человек. Составим меню и организуем для вас банкет, свадьбу и любой другой праздник так, что он составит наилучшие воспоминания.
         </Typography>
@@ -88,7 +87,8 @@ export default function ActionAreaCard() {
         Наши повара удивят вас своим мастерством, официанты — отличным сервисом, а интерьер — красотой и уютом.
         </Typography>
       </CardContent>
-      </Card>
+      </Card></div>
+    
     
    </Box>
     
