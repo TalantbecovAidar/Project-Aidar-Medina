@@ -226,9 +226,9 @@ export default function Navbar() {
               </Link>
             ))}
              
-              <Button sx={{backgroundColor:"#ffe082", color:"#f57f17", height:"20px", marginTop:"2px"} }variant="contained" size="small">
+              {/* <Button sx={{backgroundColor:"#ffe082", color:"#f57f17", height:"20px", marginTop:"2px"} }variant="contained" size="small">
           Заказать 
-        </Button>
+        </Button> */}
 
         <a href="https://www.instagram.com/arzu_restaurants/" > <InstagramIcon sx={{color:"#ffe082"}}/></a>
               

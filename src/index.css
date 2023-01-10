@@ -56,3 +56,15 @@ a {
   }
 }
   /*  adaptive end */
+
+
+
+  @media all and (max-width: 320px){
+    .navbar{
+      margin-left: -15%;
+    }
+    .img{
+      width: -90%;
+      height: 10px;
+    }
+  }
