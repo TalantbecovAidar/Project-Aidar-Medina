@@ -10,7 +10,7 @@ const ProductsList = () => {
 
   const [page, setPage] = useState(1)
 
-  const itemsPerPage = 16;
+  const itemsPerPage = 10;
 
   const count = Math.ceil(products.length/itemsPerPage)
 
@@ -40,20 +40,19 @@ const ProductsList = () => {
       md={9}
       sx={{ justifyContent: "center", display: "flex", flexWrap: "wrap" }}
     >
-      <Box
+      <Box 
+      className="cardss"
         sx={{
           display: "flex",
           flexWrap: "wrap",
-          minHeight: "40vh",
+          minHeight: "100%",
           gap: "10px",
         }}
       >
 
         {products.length > 0 ? (currentData().map((item) => (
-          <ProductCard item={item} key={item.id} />
+          <ProductCard className="card-front" item={item} key={item.id} />
         ))) : (<CircularProgress color="inherit" />)}
-
-        {}
       </Box>
       <Pagination sx={{m:6}} count={count} page={page} onChange={handleChange} shape="rounded" />
     </Grid>

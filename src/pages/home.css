@@ -13,9 +13,9 @@ body{
 
 
 
-.card{
+/* .card{
     margin-top: 10px;
-}
+} */
 
 .box{
     display: flex;
@@ -29,5 +29,13 @@ body{
    .box:hover {
     transform: scale(0.9); /* Увеличиваем масштаб */
    }
+
+  .next{
+    font-weight: 600px;
+   margin-top:30px ;
+     margin-left: 18px;
+    font-size: 18px;
+   
+  }
 
  

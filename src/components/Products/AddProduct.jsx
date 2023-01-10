@@ -17,7 +17,7 @@ const AddProduct = () => {
 
 
   return (
-    <Box sx={{ width: "60vw", margin: "10vh auto" }}>
+    <Box sx={{ width: "60vw", margin: "10vh auto", backgroundColor: "white" }}>
       <TextField
       value={product.name}
       onChange={(e)=>setProduct((prev)=> ({...prev, name: e.target.value}))}

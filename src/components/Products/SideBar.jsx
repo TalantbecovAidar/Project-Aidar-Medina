@@ -40,7 +40,7 @@ const SideBar = () => {
           <FormControl sx={{color:"white", marginLeft:"40px", }}>
             <FormLabel sx={{color:"white"}}>Type</FormLabel>
             <RadioGroup onChange={(e) => fetchByParams("type", e.target.value)} >
-              <FormControlLabel value="все" control={<Radio sx={{color:"white"}}/>} label="все " ></FormControlLabel>
+              <FormControlLabel value="all" control={<Radio sx={{color:"white"}}/>} label="все" ></FormControlLabel>
               <FormControlLabel value="завтраки" control={<Radio sx={{color:"white"}}/>}  label="завтраки" ></FormControlLabel>
               <FormControlLabel value="вторые блюда" control={<Radio  sx={{color:"white"}}/>}  label="вторые блюда" ></FormControlLabel>
               <FormControlLabel value="десерты" control={<Radio  sx={{color:"white"}}/>}  label="десерты" ></FormControlLabel>
@@ -51,7 +51,7 @@ const SideBar = () => {
           <FormControl sx={{color:"white"}} >
             <FormLabel sx={{color:"white"}}>Price</FormLabel>
             <RadioGroup onChange={(e) => fetchByParams("price_lte", e.target.value)} >
-              <FormControlLabel value="все" control={<Radio  sx={{color:"white"}}/>} label="все" ></FormControlLabel>
+              <FormControlLabel value="all" control={<Radio  sx={{color:"white"}}/>} label="все" ></FormControlLabel>
               <FormControlLabel value="100" control={<Radio sx={{color:"white"}}/>}  label="меньше чем 100" ></FormControlLabel>
               <FormControlLabel value="600" control={<Radio sx={{color:"white"}}/>}  label="меньше чем 600" ></FormControlLabel>
               <FormControlLabel value="1300" control={<Radio  sx={{color:"white"}}/>}  label="меньше чем 1300" ></FormControlLabel>

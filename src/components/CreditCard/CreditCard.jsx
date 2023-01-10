@@ -67,7 +67,26 @@ export default class PaymentForm extends React.Component {
             onChange={this.handleInputChange}
             onFocus={this.handleInputFocus}
           />
-          <Button onClick={()=>cartCleaner()} sx={{width: "20px", height: "20px"}} variant="contained" color="success">
+          <input 
+            type="tel"
+            name="adres"
+            placeholder="Adres"
+            onChange={this.handleInputChange}
+            onFocus={this.handleInputFocus}
+          /><input 
+          type="tel"
+          name="number"
+          placeholder="Number"
+          onChange={this.handleInputChange}
+          onFocus={this.handleInputFocus}
+        /><input 
+        type="tel"
+        name="mail"
+        placeholder="Mail"
+        onChange={this.handleInputChange}
+        onFocus={this.handleInputFocus}
+      />
+          <Button onClick={()=>cartCleaner()} sx={{width: "30px", height: "30px"}} variant="contained" color="success">
   BUY
 </Button>
         </form>
