@@ -5,10 +5,10 @@ import "./AboutUs.css";
 const AboutUs = () => {
   return (
     <div style={{color: "white"}} >
-      <video id="background-video" loop autoPlay muted>
+      <video className="video" id="background-video" loop autoPlay muted>
         <source src={require("./Video_994875452_28.mp4")} type="video/mp4" />
       </video>
-      <div className="div">
+      <div className="divs">
         <h2 className="h2">О НАС</h2>
         <br />
         <h4 className="h4">Добро пожаловать на сайт ресторана Arzu!</h4>

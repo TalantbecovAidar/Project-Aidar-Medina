@@ -76,6 +76,7 @@ export default function Auth() {
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
+            backgroundColor: "white"
           }}
         >
           <Avatar sx={{ m: 1, bgcolor: "secondary.main" }}>
@@ -129,7 +130,7 @@ export default function Auth() {
                 type="submit"
                 fullWidth
                 variant="contained"
-                sx={{ mt: 3, mb: 2 }}
+                sx={{ mt: 3, mb: 2 , backgroundColor:"black"}}
                 onClick={() => {
                   handleLogin();
                   navigate("/");
@@ -142,7 +143,7 @@ export default function Auth() {
                 type="submit"
                 fullWidth
                 variant="contained"
-                sx={{ mt: 3, mb: 2 }}
+                sx={{ mt: 3, mb: 2 , backgroundColor:"black" }}
                 onClick={() => {
                   handleSignUp();
                   navigate("/");
@@ -180,7 +181,7 @@ export default function Auth() {
             </Grid>
           </Box>
         </Box>
-        <Copyright sx={{ mt: 8, mb: 4 }} />
+        <Copyright sx={{ color: "white", mt: 8, mb: 4 }} />
       </Container>
     </ThemeProvider>
   );

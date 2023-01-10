@@ -28,7 +28,7 @@ const EditProduct = () => {
   };
     console.log(product);
     return (
-        <Box sx={{ width: "60vw", margin: "10vh auto" }}>
+        <Box sx={{ width: "60vw", margin: "10vh auto", backgroundColor: "white" }}>
             <TextField
                 fullWidth
                 variant="outlined"
